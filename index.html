@@ -1,47 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Arcade Sports Games</title>
-
 <style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
 
-body{
-font-family: Arial;
-background:#111;
-color:white;
-text-align:center;
-}
+  header {
+    padding: 40px 20px 20px 20px;
+    background: #1e90ff;
+    color: white;
+  }
 
-h1{
-margin-top:40px;
-}
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
 
-.game{
-display:block;
-width:300px;
-margin:20px auto;
-padding:20px;
-background:#1e90ff;
-color:white;
-text-decoration:none;
-font-size:22px;
-border-radius:10px;
-}
+  .games {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+    gap: 20px;
+  }
 
-.game:hover{
-background:#0f6ad8;
-}
+  .game-button {
+    display: block;
+    width: 280px;
+    padding: 20px;
+    background: #0f6ad8;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    transition: transform 0.2s, background 0.2s;
+  }
+
+  .game-button:hover {
+    background: #064a9c;
+    transform: scale(1.05);
+  }
+
+  iframe {
+    width: 90%;
+    max-width: 800px;
+    height: 600px;
+    border: none;
+    margin: 20px 0;
+  }
+
+  footer {
+    padding: 20px;
+    background: #1e90ff;
+    margin-top: 40px;
+  }
 
 </style>
-
 </head>
 
 <body>
 
-<h1>🎮 Arcade Sports Games</h1>
+<header>
+  <h1>🎮 Arcade Sports Games</h1>
+  <p>Click a game to play or scroll down to play directly!</p>
+</header>
 
-<a href="soccer.html" class="game">⚽ Super Liquid Soccer</a>
-<a href="tennis.html" class="game">🎾 Tennis Masters</a>
+<section class="games">
+  <!-- Links to games -->
+  <a href="https://superliquidsoccer.gitlab.io/" target="_blank" class="game-button">
+    ⚽ Super Liquid Soccer
+  </a>
+
+  <a href="https://sites.google.com/site/populardoodlegames/tennis-masters" target="_blank" class="game-button">
+    🎾 Tennis Masters
+  </a>
+</section>
+
+<section>
+  <h2>⚽ Play Super Liquid Soccer Below!</h2>
+  <iframe src="https://superliquidsoccer.gitlab.io/"></iframe>
+
+  <h2>🎾 Play Tennis Masters Below!</h2>
+  <iframe src="https://sites.google.com/site/populardoodlegames/tennis-masters"></iframe>
+</section>
+
+<footer>
+  <p>Made with ❤️ on GitHub Pages</p>
+</footer>
 
 </body>
 </html>
